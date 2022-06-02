@@ -1,11 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - puts test
- * Return: 0
+ * main - qupte
+ * Return: 1
  */
+
 int main(void)
 {
-	puts("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	return (0);
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19",59);
+	return(1);
 }
