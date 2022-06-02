@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main
+ * main:puts test
  */
 int main(void)
 {
