@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - puts test
  * Return: 0
  */
