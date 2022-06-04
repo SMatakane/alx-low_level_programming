@@ -24,11 +24,10 @@ int main(void)
 				putchar(x);
 				putchar(temp_y);
 				putchar(temp);
-				if (x != '7' && temp_y != '8' && temp != '9')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				if (x == '7' && temp_y == '8' && temp == '9')
+					break;
+				putchar(',');
+				putchar(' ');
 			}
 			temp_z++;
 		}
