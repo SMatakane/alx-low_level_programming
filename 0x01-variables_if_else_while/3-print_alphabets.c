@@ -8,12 +8,15 @@
  */
 int main(void)
 {
-	int x = 'A';
+	int x = 'a';
 
 	for (; x <= 'z'; x++)
 	{
-		if (x == '[')
-			x = 'a';
+		putchar(x);
+	}
+	x = 'A';
+	for (; x <= 'Z'; x++)
+	{
 		putchar(x);
 	}
 	putchar('\n');
