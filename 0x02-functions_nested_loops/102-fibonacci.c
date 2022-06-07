@@ -5,11 +5,11 @@
  * @n: size
  * Return: 1 or fib(n)
  */
-int fib(int n)
+long int fib(int n)
 {
-	int a = 1;
-	int b = 1;
-	int out = 0;
+	long int a = 1;
+	long int b = 1;
+	long int out = 0;
 	int i = 0;
 
 	if (n == 0)
@@ -33,7 +33,7 @@ int main(void)
 	int i = 0;
 
 	for (; i < n; i++)
-		printf("%d, ", fib(i));
-	printf("%d\n", fib(n-1));
+		printf("%ld, ", fib(i));
+	printf("%ld\n", fib(n-1));
 	return (0);
 }
