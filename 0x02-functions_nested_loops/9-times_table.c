@@ -22,6 +22,8 @@ void times_table(void)
 			if (ten != 0)
 				_putchar('0' + ten);
 			_putchar('0' + unit);
+			if ( ten == 0)
+				_putchar(' ');
 			if (col != 9)
 			{
 				_putchar(',');
