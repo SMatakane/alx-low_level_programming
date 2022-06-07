@@ -25,7 +25,7 @@ void print_times_table(int n)
 				if (ten != 0)
 					_putchar('0' + ten);
 				_putchar('0' + unit);
-				if (col != n)
+				if (col % n != 1)
 				{
 					_putchar(',');
 					_putchar(' ');
