@@ -12,7 +12,7 @@ void times_table(void)
 	for (; row <= 10; row++)
 	{
 		int col = 0;
-		
+
 		for (; col <= 10; col++)
 		{
 			val = row * col;
