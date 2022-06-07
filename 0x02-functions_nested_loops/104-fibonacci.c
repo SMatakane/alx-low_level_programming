@@ -27,7 +27,7 @@ long int fib(int n)
  */
 int main(void)
 {
-	int n = 50;
+	int n = 98;
 	int i = 1;
 
 	for (; i < n; i++)
