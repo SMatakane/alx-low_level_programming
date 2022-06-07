@@ -5,11 +5,11 @@
  * @n: size
  * Return: 1 or fib(n)
  */
-unsigned long fib(int n)
+unsigned long int fib(int n)
 {
-	unsigned long a = 1;
-	unsigned long b = 1;
-	unsigned long out = 0;
+	unsigned long int a = 1;
+	unsigned long int b = 1;
+	unsigned long int out = 0;
 	int i = 0;
 
 	for (; i < n; i++)
@@ -31,7 +31,7 @@ int main(void)
 	int i = 1;
 
 	for (; i < n; i++)
-		printf("%ld, ", fib(i));
-	printf("%ld\n", fib(n));
+		printf("%lu, ", fib(i));
+	printf("%lu\n", fib(n));
 	return (0);
 }
