@@ -24,11 +24,12 @@ void times_table(void)
 				_putchar('0' + hundred);
 			if (ten != 0 || (hundred != 0 && ten == 0))
 				_putchar('0' + ten);
+			else
+				_putchar(' ');
 			_putchar('0' + unit);
 			if (col != 10)
 			{
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 		}
