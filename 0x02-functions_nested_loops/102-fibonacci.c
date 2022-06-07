@@ -28,7 +28,7 @@ long int fib(int n)
 int main(void)
 {
 	int n = 50;
-	int i = 0;
+	int i = 1;
 
 	for (; i <= n; i++)
 		printf("%ld, ", fib(i));
