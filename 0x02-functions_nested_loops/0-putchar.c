@@ -12,6 +12,5 @@ int main(void)
 
 	for (; i < (int) sizeof(ch); i++)
 		putchar(ch[i]);
-	putchar('\n');
 	return (0);
 }
