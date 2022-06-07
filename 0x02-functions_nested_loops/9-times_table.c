@@ -19,7 +19,7 @@ void times_table(void)
 			ten = (val / 10) % 10;
 			unit = (val / 1) % 10;
 
-			if (ten == 0)
+			if (ten == 0 and unit != 0)
 				_putchar(' ');
 			if (ten != 0)
 				_putchar('0' + ten);
