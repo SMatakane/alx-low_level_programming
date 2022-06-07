@@ -34,7 +34,10 @@ int main(void)
 	for (; i < n; i++)
 	{
 		if (fib(i) > 4000000)
+		{
 			printf("%d\n", sum);
+			break;
+		}
 		if (fib(i) % 2 == 0)
 			sum += fib(i);
 	}
