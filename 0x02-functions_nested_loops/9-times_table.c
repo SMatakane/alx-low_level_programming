@@ -27,7 +27,7 @@ void times_table(void)
 			else
 				_putchar(' ');
 			_putchar('0' + unit);
-			if (col != 10)
+			if (col != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
