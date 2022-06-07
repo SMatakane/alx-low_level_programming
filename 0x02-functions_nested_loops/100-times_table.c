@@ -12,11 +12,11 @@ void print_times_table(int n);
 		int row = 0;
 		int val, ten, unit = 0;
 
-		for (; row <= 9; row++)
+		for (; row <= n; row++)
 		{
 			int col = 0;
 
-			for (; col <= 9; col++)
+			for (; col <= n; col++)
 			{
 				val = row * col;
 				ten = (val / 10) % 10;
@@ -27,7 +27,7 @@ void print_times_table(int n);
 				if (ten != 0)
 					_putchar('0' + ten);
 				_putchar('0' + unit);
-				if (col != 9)
+				if (col != n)
 				{
 					_putchar(',');
 					_putchar(' ');
