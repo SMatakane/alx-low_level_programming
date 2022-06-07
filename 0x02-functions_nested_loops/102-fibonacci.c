@@ -30,7 +30,7 @@ int main(void)
 	int n = 50;
 	int i = 1;
 
-	for (; i <= n; i++)
+	for (; i < n; i++)
 		printf("%ld, ", fib(i));
 	printf("%ld\n", fib(n));
 	return (0);
