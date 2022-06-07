@@ -16,16 +16,11 @@ void times_table(void)
 		for (; col <= 9; col++)
 		{
 			val = row * col;
-			hundred = (val / 100) % 10;
 			ten = (val / 10) % 10;
 			unit = (val / 1) % 10;
 
-			if (hundred != 0)
-				_putchar('0' + hundred);
-			if (ten != 0 || (hundred != 0 && ten == 0))
+			if (ten != 0)
 				_putchar('0' + ten);
-			else
-				_putchar(' ');
 			_putchar('0' + unit);
 			if (col != 9)
 			{
