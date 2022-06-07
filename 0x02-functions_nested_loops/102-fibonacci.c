@@ -12,8 +12,6 @@ long int fib(int n)
 	long int out = 0;
 	int i = 0;
 
-	if (n == 0)
-		return (1);
 	for (; i < n; i++)
 	{
 		out = a + b;
