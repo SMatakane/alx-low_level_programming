@@ -9,11 +9,11 @@ void times_table(void)
 	int row = 0;
 	int val, hundred, ten, unit = 0;
 
-	for (; row <= 10; row++)
+	for (; row <= 9; row++)
 	{
 		int col = 0;
 
-		for (; col <= 10; col++)
+		for (; col <= 9; col++)
 		{
 			val = row * col;
 			hundred = (val / 100) % 10;
