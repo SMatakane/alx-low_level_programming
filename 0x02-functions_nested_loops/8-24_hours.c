@@ -1,42 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * jack_bauer - prototype
+ * jack_bauer - 24 stuff
  * Return: 0
- */
-void jack_bauer(void);
-
-/**
- * main - main
- * Return: 0
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
-
-/**
- * jack_bauer - monday blues
- * Return: slow clock
  */
 void jack_bauer(void)
 {
-	int unit, ten, hundred, thousand, clock = 0;
+	int A = 0;
+	int thousand, hundred, ten, unit;
 
-	while (clock != 2400)
+	for (; A <= 24; A++)
 	{
-		unit = (clock / 1) % 10;
-		ten = (clock / 60) % 10;
-		hundred = (clock / 100) % 4;
-		thousand = (clock / 1000) % 3;
+		int B = 0;
+		for (; B < 60; B++)
+		{
+			thousand = (A / 10) % 10;
+			hundred = (A / 1) % 10;
+			ten = (B / 10) % 10;
+			unit = (B / 1) % 10;
 
-		putchar('0' + thousand);
-		putchar('0' + hundred);
-		putchar(':');
-		putchar('0' + ten);
-		putchar('0' + unit);
-		putchar('\n');
-		clock++;
+			_putchar('0' + thousand);
+			_putchar('0' + hundred);
+			_putchar(':');
+			_putchar('0' + ten);
+			_putchar('0' + unit);
+		}
+		_putchar('\n');
 	}
 }
