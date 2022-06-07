@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * natural - something
  * @n: size
@@ -16,4 +15,16 @@ int natural(int n)
 			sum += i;
 	}
 	return (sum);
+}
+
+/**
+ * main - main
+ * Return: 0
+ */
+int main(void)
+{
+	int n = 1024;
+
+	printf("%d\n", natural(n));
+	return (0);
 }
