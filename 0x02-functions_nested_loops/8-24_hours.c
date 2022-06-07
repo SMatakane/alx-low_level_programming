@@ -12,6 +12,7 @@ void jack_bauer(void)
 	for (; A < 24; A++)
 	{
 		int B  = 0;
+
 		for (; B < 60; B++)
 		{
 			thousand = (A / 10) % 10;
