@@ -22,8 +22,6 @@ void print_times_table(int n)
 				ten = (val / 10) % 10;
 				unit = (val / 1) % 10;
 
-				if (ten == 0 && col != 0)
-					_putchar(' ');
 				if (ten != 0)
 					_putchar('0' + ten);
 				_putchar('0' + unit);
