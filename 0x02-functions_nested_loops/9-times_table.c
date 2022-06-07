@@ -9,13 +9,14 @@ void times_table(void)
 	int row = 0;
 	int val, hundred, ten, unit = 0;
 
-	for (; row <= 12; row++)
+	for (; row <= 10; row++)
 	{
 		int col = 0;
-		for (; col <= 12; col++)
+		
+		for (; col <= 10; col++)
 		{
 			val = row * col;
-			hundred = (val/ 100) % 10;
+			hundred = (val / 100) % 10;
 			ten = (val / 10) % 10;
 			unit = (val / 1) % 10;
 
@@ -28,13 +29,11 @@ void times_table(void)
 			else
 				_putchar(' ');
 			_putchar('0' + unit);
-			if (col != 12)
+			if (col != 10)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
-			else
-				_putchar('\n');
 		}
 	}
 }
