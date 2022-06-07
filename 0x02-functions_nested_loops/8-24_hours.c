@@ -9,7 +9,7 @@ void jack_bauer(void)
 	int A = 0;
 	int thousand, hundred, ten, unit;
 
-	for (; A <= 24; A++)
+	for (; A < 24; A++)
 	{
 		int B = 0;
 		for (; B < 60; B++)
