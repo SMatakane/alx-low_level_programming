@@ -3,7 +3,6 @@
 
 int main(void)
 {
-	printf("%d\n", mul(2, 3));
-	printf("%d\n", mul(-402, 4096));
+	print_numbers();
 	return (0);
 }
