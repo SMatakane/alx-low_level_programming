@@ -8,6 +8,7 @@ int main(void)
 {
 	int max;
 	int dividend = 2;
+	long int n = 612852475143;
 
 	while (n > 1)
 	{
