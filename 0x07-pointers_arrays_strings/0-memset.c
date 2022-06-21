@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * memset - sets mem of src
+ * _memset - sets mem of src
  * @s: char input
  * @b: char input
  * @n: integer input
+ * Return: char val
  */
 char *_memset(char *s, char b, unsigned int n)
 {
