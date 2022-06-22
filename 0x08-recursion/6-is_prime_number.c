@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * eval - evaluates
+ * _eval - evaluates
  * @num: integer input
  * @iter: iterations
  * Return: integer out
