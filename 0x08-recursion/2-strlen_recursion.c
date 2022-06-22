@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - length of string recursed
+ * _strlen_recursion - length of string recursed
  * @s: string input
  * Return: size as integer
  */
