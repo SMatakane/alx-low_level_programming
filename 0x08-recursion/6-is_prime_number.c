@@ -1,31 +1,34 @@
 #include "main.h"
 
 /**
- * is_prime_number - check if prime
- * @n: integer input
- * Return: integer val
+ * eval - evaluates
+ * @num: integer input
+ * @iter: iterations
+ * Return: integer out
  */
-int is_prime_number(int n)
+int _eval(int num, int iter)
 {
-	if (n <= 1)
-		return (0);
-	else if (n == 2)
+	if (iter == num - 1)
 		return (1);
-	else
-		return (manual(n, 2));
+	else if (num % iter == 0)
+		return (0);
+	if (num % iter != 0)
+		return (_eval(num, iter + 1));
+	return (0);
 }
 
 /**
- * manual - manually computes and checks
- * @n: integer 
- * @i: integer
- * Return: integer
+ * is_prime_number - math nerd stuff
+ * @num: integer val
+ * Return: if true 1 else 0
  */
-int manual(int n, int i)
+int is_prime_number(int num)
 {
-	if (n % i == 0)
+	int iter = 2;
+
+	if (num < 2)
 		return (0);
-	else if (n% i != 0 && i == (n - 1))
+	if (num == 2)
 		return (1);
-	return (manual(n, i + 1));
+	return (_eval(num, iter));
 }
