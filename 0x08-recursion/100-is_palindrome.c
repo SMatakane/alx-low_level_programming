@@ -1,6 +1,18 @@
 #include "main.h"
 
 /**
+ * _strlen_recursion - len of string
+ * @s: string
+ * Return: integer
+ */
+int _strlen_recursion(char *s)
+{
+	if (!(*s))
+		return (0);
+	return (1 + _strlen_recursion(s++));
+}
+
+/**
  * p_helper - some helper function
  * @s: string
  * @pos: position
@@ -24,5 +36,5 @@ int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 
-	return (p_helper(s, len - 1));
+	return (p_helper(s, len - 1));/* is that my stack crying? */
 }
