@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * wildcmp - wiiiiiiiild
+ * @s1: string 1
+ * @s2: string 2
+ * Return: integer 1 or 0 to true or false
+ */
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
