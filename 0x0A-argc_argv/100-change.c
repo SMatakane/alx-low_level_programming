@@ -9,14 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
+	int amount;
+	int coins = 0;
+
 	if (argc != 2)
 	{
-		print("Error\n");
+		printf("Error\n");
 		return (1);
 	}
 
-	int amount = atoi(argv[1]);
-	int coins = 0;
+	amount = atoi(argv[1]);
 
 	if (amount > 25)
 	{
