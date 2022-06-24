@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * main - starterpack lololol
  * @argc: integer
@@ -12,10 +14,10 @@ int main(int argc, char *argv[])
 	argc = argc - 1;
 	if (argc == 2)
 	{
-		mul = argv[1] * argv[2];
+		mul = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mul);
 	}
 	else
-		print("Error\n");
+		printf("Error\n");
 	return (0);
 }
