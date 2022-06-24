@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - main
+ * @argc: int
+ * @argv: array
+ * Return: void
+ */
 int main(int argc, char *argv[])
 {
 	int i = 0;
