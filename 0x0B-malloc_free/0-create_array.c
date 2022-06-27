@@ -3,11 +3,10 @@
 
 /**
  * create_array - as name implies
- * size: array size
- * c: char input
+ * @size: size
+ * @c: char input
  * Return: char ptr
  */
-
 char *create_array(unsigned int size, char c)
 {
 	char *c_;
