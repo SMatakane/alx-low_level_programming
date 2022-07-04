@@ -1,6 +1,7 @@
 /**
  * print_dog - printing best friends
  * d: double ds
+ * Return: void
  */
 void print_dog(struct dog *d)
 {
