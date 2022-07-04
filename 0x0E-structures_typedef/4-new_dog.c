@@ -1,8 +1,18 @@
 #include "dog.h"
 #include <stdlib.h>
-
+/**
+ * new_dog - more besties
+ * @name: name
+ * @age: age
+ * @owner: me
+ * Return: t_god
+ */
 dog_t *new_dog(char *name, float age, char *owner);
-
+/**
+ * _strlen - len
+ * @str: charptr
+ * Return: int
+ */
 int _strlen(char *str)
 {
 	int len = 0;
@@ -10,7 +20,12 @@ int _strlen(char *str)
 		len++;
 	return (len);
 }
-
+/**
+ * _strcopy - copy
+ * @dest: dest
+ * @src: src
+ * Return: charptr
+ */
 char *_strcopy(char *dest, char *src)
 {
 	int idx = 0;
@@ -20,7 +35,13 @@ char *_strcopy(char *dest, char *src)
 	dest[idx] = '\0';
 	return (dest);
 }
-
+/**
+ * new - actual
+ * @name: name
+ * @age: age
+ * @owner: me
+ * Return: ptr
+ */
 dog_t *new(char *name, float age, char *owner)
 {
 	dog_t *doggo;
