@@ -30,8 +30,10 @@ int main(void)
 	int n = 98;
 	int i = 1;
 
-	for (; i < n; i++)
+	for (; i < n - 7; i++)
 		printf("%lu, ", fib(i));
+	for (i = n - 7, i <= n;i++)
+		//edit later
 	printf("%lu\n", fib(n));
 	return (0);
 }
