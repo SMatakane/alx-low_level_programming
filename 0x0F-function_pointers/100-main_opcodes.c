@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	for (idx = 0; idx < bytes; idx++)
 	{
-		opcode = (unsigned char *) addr;
+		opcode = *(unsigned char *) addr;
 		printf("%.2x", opcode);
 
 		if (idx == bytes - 1)
