@@ -1,7 +1,11 @@
 #include "3-calc.h"
 #include <stdlib.h>
-
-int (*get_op_func(char *s))(int , int)
+/**
+ * get_op_func - gets func of opcode
+ * @s: symbol
+ * Return: operation
+ */
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
