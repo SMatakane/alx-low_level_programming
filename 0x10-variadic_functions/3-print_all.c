@@ -58,7 +58,7 @@ void print_string(va_list arg)
  * @format: format
  * Return: void
  */
-void print_all(char * const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0;
