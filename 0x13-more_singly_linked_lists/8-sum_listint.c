@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+ * sum_listint - sums vals
+ * @head: head
+ * Return: summation
+ */
 int sum_listint(listint_t *head)
 {
 	listint_t *current;
