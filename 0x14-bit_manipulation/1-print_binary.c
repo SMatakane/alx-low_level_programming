@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * print_binary - prints bin
+ * @n: input
+ * Return: void
+ */
 void print_binary(unsigned long int n)
 {
 	if (n > 1)
