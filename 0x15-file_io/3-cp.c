@@ -1,0 +1,89 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * create_buffer - creates buffer for file
+ * @file: file
+ * Return: char
+ */
+char *create_buffer(char *file)
+{
+	char *buffer;
+
+	buffer = malloc(sizeof(char) * 1024);
+	if (buffer == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: cannot write to %s\n", file);
+		exit(98);
+	}
+	return (buffer);
+}
+
+/**
+ * close_file - closes file
+ * @fd: file
+ * Return: void
+ */
+void close_file(int fd)
+{
+	int c;
+
+	c = close(fd);
+	if (c == -1)
+	{
+		dprintf(STDERR_FILENO, "ErrorL cannot close fd %d\n", fd);
+		exit(100);
+	}
+}
+/**
+ * main - main
+ * @argc: argc
+ * @argv: argv
+ * Return: cp
+ */
+int main(int argc, char *argv[])
+{
+	int from;
+	int to;
+	int r;
+	int w;
+	char *buffer;
+
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp source dest\n");
+		exit(97);
+	}
+
+	buffer = create_buffer(argv[2]);
+	from = open(argv[1], O_RDONLY);
+	r = read(from, buffer, 1024);
+	to = open(argv[2], O_CREAT| O_WRONLY | O_TRUC, 0664);
+
+	do
+	{
+		if (from == -1 || r == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: cannot read file %s\n", argv[1]);
+			free(buffer);
+			exit(98);
+		}
+
+		w = write(to, buffer, r);
+		if (to == -1 || w == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: cannot write to file %s\n", argv[2]);
+			free(buffer);
+			exit(99);
+		}
+
+		r = read(from, buffer, 1024);
+		to = open(argv[2], O_WRONLY | O_APPEND);
+	} while (r > 0);
+
+	free(buffer);
+	close_file(from);
+	close_file(to);
+
+	return (0);
+}
